@@ -12,12 +12,12 @@ module.exports = (plop) => {
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/index.tsx',
-        templateFile: 'templates/Component/Component.tsx.hbs',
+        templateFile: 'templates/component/component.tsx.hbs',
       },
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/styles.module.scss',
-        templateFile: 'templates/Component/Component.module.scss.hbs',
+        templateFile: 'templates/component/component.module.scss.hbs',
       },
       {
         type: 'append',
@@ -43,6 +43,17 @@ module.exports = (plop) => {
         message: 'What is your page name?',
       },
     ],
-    actions: [],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/pages/{{pascalCase name}}/index.tsx',
+        templateFile: 'templates/page/page.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/pages/{{pascalCase name}}/styles.module.scss',
+        templateFile: 'templates/page/page.module.scss.hbs',
+      },
+    ],
   });
 };
