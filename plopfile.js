@@ -16,7 +16,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/components/{{pascalCase name}}/styles.module.scss',
+        path: 'src/components/{{pascalCase name}}/{{camelCase name}}.module.scss',
         templateFile: 'templates/component/component.module.scss.hbs',
       },
       {
@@ -29,7 +29,7 @@ module.exports = (plop) => {
         type: 'append',
         path: 'src/components/index.ts',
         pattern: `/* PLOP_INJECT_EXPORT */`,
-        template: `{{pascalCase name}},`,
+        template: `  {{pascalCase name}},`,
       },
     ],
   });
@@ -51,7 +51,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/pages/{{pascalCase name}}/styles.module.scss',
+        path: 'src/pages/{{pascalCase name}}/{{camelCase name}}.module.scss',
         templateFile: 'templates/page/page.module.scss.hbs',
       },
     ],
