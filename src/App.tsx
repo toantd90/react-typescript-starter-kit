@@ -3,7 +3,7 @@ import HomePage from 'pages/HomePage';
 import './App.css';
 
 const App = () => {
-  let routes = useRoutes([{ path: '/', element: <HomePage /> }]);
+  const routes = useRoutes([{ path: '/', element: <HomePage /> }]);
 
   return routes;
 };

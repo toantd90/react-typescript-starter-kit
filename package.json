@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "plop": "^3.0.5",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.52.1"
   }
 }
